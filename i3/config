@@ -147,8 +147,8 @@ bar {
         status_command i3blocks
 }
 
-gaps inner 3
-gaps outer 3
+gaps inner 15
+gaps outer 0
 
 new_window pixel 1
 
