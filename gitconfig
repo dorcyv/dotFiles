@@ -1,0 +1,9 @@
+[user]
+	email = valerian.dorcy@gmail.com
+	name = Valerian Dorcy
+	signingkey = 2B73982FC05D6FB3
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
