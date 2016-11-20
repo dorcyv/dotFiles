@@ -5,6 +5,11 @@ separator_block_width=7
 markup=pango
 full_text=
 
+[network_stat]
+interval=15
+command=~/.config/i3blocks/network_speed.sh
+[separator]
+
 [battery]
 interval=5
 label=

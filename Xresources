@@ -6,8 +6,8 @@ Xft*antialias : true
 Xft*hinting   : 1
 Xft*dpi       : 96
 
-URxvt.transparent:   true
-URxvt.shading:       25
+!URxvt.transparent:   true
+!URxvt.shading:       25
 
 *background: #232C31
 *foreground: #C5C8C6
