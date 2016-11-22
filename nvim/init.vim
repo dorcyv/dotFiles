@@ -1,10 +1,15 @@
 " Plugin {{{
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('/home/kipik/.config/nvim/plugged')
   Plug 'mhartington/oceanic-next'
   Plug 'potatoesmaster/i3-vim-syntax'
   Plug 'rust-lang/rust.vim'
   Plug 'timonv/vim-cargo'
   Plug 'cespare/vim-toml'
+  Plug 'bling/vim-airline'
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_powerline_fonts = 1
+    let g:airline_theme='oceanicnext'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 " }}}
 
@@ -21,6 +26,7 @@ set number
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set laststatus=2
 if (has("termguicolors"))
   set termguicolors
 endif
