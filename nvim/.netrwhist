@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/kipik/.config/nvim'
-let g:netrw_dirhist_2='/home/kipik/Documents/Epitech/labJava/src/main/java'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/kipik/Documents/EIP/taskManager/lib/capistrano/tasks'
+let g:netrw_dirhist_2='/home/kipik/Documents/EIP/taskManager/capistrano'
+let g:netrw_dirhist_3='/home/kipik/Documents/EIP/taskManager/capistrano/deploy'
+let g:netrw_dirhist_4='/home/kipik/Documents/EIP/taskManager/capistrano'
+let g:netrw_dirhist_5='/home/kipik/Documents/EIP/taskManager/capistrano/deploy'
+let g:netrw_dirhist_6='/home/kipik/Documents/Taker/opecom/web/cap/deploy'

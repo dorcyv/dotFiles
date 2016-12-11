@@ -4,6 +4,7 @@ call plug#begin('/home/kipik/.config/nvim/plugged')
   Plug 'potatoesmaster/i3-vim-syntax'
   Plug 'rust-lang/rust.vim'
   Plug 'timonv/vim-cargo'
+  Plug 'scrooloose/nerdcommenter'
   Plug 'cespare/vim-toml'
   Plug 'bling/vim-airline'
     let g:airline#extensions#tabline#enabled = 1
@@ -45,9 +46,11 @@ nnoremap <LEFT> :tabprev<CR>
 nnoremap <RIGHT> :tabnext<CR>
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
+nnoremap <F2> :noh<CR>
 
 nnoremap <leader>a za
 nnoremap <leader>l :set list!<CR>
+nnoremap gt <C-]>
 " }}}
 
 " Autocmd {{{
