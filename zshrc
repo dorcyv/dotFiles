@@ -85,7 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.zshenv
-source $HOME/.cargo/env
 
 # Alias
 alias vim='nvim'
@@ -98,21 +97,21 @@ alias composer='php -d extension=pdo_sqlite.so -n /usr/bin/composer'
 
 cdpath=(~/ ~/Documents/ ~/Documents/Epitech/ ~/Documents/Web/ ~/Documents/Taker/)
 
-SSH_ENV="$HOME/.ssh/environment"
-function start_agent {
-        echo "Initialising new SSH agent..."
-        /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-        echo succeeded
-        chmod 600 "${SSH_ENV}"
-        . "${SSH_ENV}" > /dev/null
-        /usr/bin/ssh-add -t 432000 ;
-}
+#SSH_ENV="$HOME/.ssh/environment"
+#function start_agent {
+        #echo "Initialising new SSH agent..."
+        #/usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+        #echo succeeded
+        #chmod 600 "${SSH_ENV}"
+        #. "${SSH_ENV}" > /dev/null
+        #/usr/bin/ssh-add -t 432000 ;
+#}
 
-if [ -f "${SSH_ENV}" ]; then
-        . "${SSH_ENV}" > /dev/null
-        ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-                start_agent;
-        }
-else
-        start_agent;
-fi
+#if [ -f "${SSH_ENV}" ]; then
+        #. "${SSH_ENV}" > /dev/null
+        #ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+                #start_agent;
+        #}
+#else
+        #start_agent;
+#fi
