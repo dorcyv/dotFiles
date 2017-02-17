@@ -11,6 +11,7 @@ call plug#begin('/home/kipik/.config/nvim/plugged')
     let g:airline_powerline_fonts = 1
     let g:airline_theme='oceanicnext'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'keith/tmux.vim'
 call plug#end()
 " }}}
 
@@ -37,6 +38,7 @@ set clipboard=unnamedplus
 set inccommand=split
 let mapleader = "\<Space>"
 set listchars=eol:$,trail:¤
+command W w !sudo tee % > /dev/null
 " }}}
 
 " Map {{{

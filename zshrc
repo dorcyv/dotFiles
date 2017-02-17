@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras)
+plugins=(git git-extras docker docker-compose mvn svn composer)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,29 +89,17 @@ source ~/.zshenv
 # Alias
 alias vim='nvim'
 alias n='nvim'
-alias blih='blih -t ccc635de5e7e1220500b1ecc1e8787cc4ed327ef04692271f21945ff4c13f0ec014bd2226f2cd042cf4073e0572dd3c52369fb447194dd1cd698656c0a44bf33 -u dorcy_v'
+alias blih='blih -t ccc635de5e7e1220500b1ecc1e8787cc4ed327ef04692271f21945ff4c13f0ec014bd2226f2cd042cf4073e0572dd3c52369fb447194dd1cd698656c0a44bf33 -u valerian.dorcy@epitech.eu'
 alias bc='bc -lq'
-alias composer='php -d extension=pdo_sqlite.so -n /usr/bin/composer'
+#alias composer='php -d extension=curl.so -d extension=pdo_sqlite.so -d extension=bcmath.so -n /usr/bin/composer'
+alias sf='./bin/console'
+alias cal='khal'
 
 [[ $TERM != "screen" ]] && exec tmux
 
-cdpath=(~/ ~/Documents/ ~/Documents/Epitech/ ~/Documents/Web/ ~/Documents/Taker/)
+cdpath=(~/ ~/Documents/ ~/Documents/Epitech/ ~/Documents/Web/ ~/Documents/Taker/ ~/Documents/Perso/)
 
-#SSH_ENV="$HOME/.ssh/environment"
-#function start_agent {
-        #echo "Initialising new SSH agent..."
-        #/usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
-        #echo succeeded
-        #chmod 600 "${SSH_ENV}"
-        #. "${SSH_ENV}" > /dev/null
-        #/usr/bin/ssh-add -t 432000 ;
-#}
+# added by travis gem
+[ -f /home/kipik/.travis/travis.sh ] && source /home/kipik/.travis/travis.sh
 
-#if [ -f "${SSH_ENV}" ]; then
-        #. "${SSH_ENV}" > /dev/null
-        #ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
-                #start_agent;
-        #}
-#else
-        #start_agent;
-#fi
+eval "$(symfony-autocomplete)"
