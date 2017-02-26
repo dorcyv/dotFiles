@@ -12,6 +12,7 @@ call plug#begin('/home/kipik/.config/nvim/plugged')
     let g:airline_theme='oceanicnext'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'keith/tmux.vim'
+  Plug 'wakatime/vim-wakatime'
 call plug#end()
 " }}}
 
