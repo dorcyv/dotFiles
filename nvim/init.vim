@@ -3,6 +3,7 @@ call plug#begin('/home/kipik/.config/nvim/plugged')
   Plug 'mhartington/oceanic-next'
   Plug 'potatoesmaster/i3-vim-syntax'
   Plug 'rust-lang/rust.vim'
+  Plug 'nginx.vim'
   Plug 'timonv/vim-cargo'
   Plug 'scrooloose/nerdcommenter'
   Plug 'cespare/vim-toml'
