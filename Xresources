@@ -1,5 +1,6 @@
 Xcursor.theme: DMZ-White
-URxvt*font            : xft:DroidSansMonoForPowerline Nerd Font:size=10
+!URxvt*font            : xft:DroidSansMonoForPowerline Nerd Font:size=10
+URxvt*font            : xft:MesloLGSDZ Nerd Font:size=10
 
 ! anti-aliasing
 Xft*antialias : true

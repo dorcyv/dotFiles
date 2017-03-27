@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras docker docker-compose mvn svn composer)
+plugins=(git git-extras docker docker-compose mvn svn composer zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,10 +94,11 @@ alias bc='bc -lq'
 #alias composer='php -d extension=curl.so -d extension=pdo_sqlite.so -d extension=bcmath.so -n /usr/bin/composer'
 alias sf='./bin/console'
 alias cal='khal'
+alias g='git'
 
-[[ $TERM != "screen" ]] && exec tmux
+#[[ $TERM != "screen" ]] && exec tmux
 
-cdpath=(~/ ~/Documents/ ~/Documents/Epitech/ ~/Documents/Web/ ~/Documents/Taker/ ~/Documents/Perso/)
+cdpath=(~/ ~/Documents/ ~/Documents/Epitech/ ~/Documents/Web/ ~/Documents/Taker/ ~/Documents/Perso/ ~/Documents/EIP/)
 
 # added by travis gem
 [ -f /home/kipik/.travis/travis.sh ] && source /home/kipik/.travis/travis.sh

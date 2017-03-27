@@ -3,6 +3,9 @@
 	name = Valérian Dorcy
 	signingkey = 2B73982FC05D6FB3
 [alias]
+        a = add
+        s = status
+        c = commit
 	st = status
 	ci = commit
 	co = checkout
