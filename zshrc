@@ -51,9 +51,13 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras docker docker-compose mvn svn composer zsh-autosuggestions)
+plugins=(git git-extras docker docker-compose mvn svn composer)
 
 source $ZSH/oh-my-zsh.sh
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
 
 # User configuration
 
@@ -87,10 +91,13 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zshenv
 
 # Alias
+alias ls='exa'
+alias ll='ls -l --git'
 alias vim='nvim'
 alias n='nvim'
 alias blih='blih -t ccc635de5e7e1220500b1ecc1e8787cc4ed327ef04692271f21945ff4c13f0ec014bd2226f2cd042cf4073e0572dd3c52369fb447194dd1cd698656c0a44bf33 -u valerian.dorcy@epitech.eu'
 alias bc='bc -lq'
+alias grep='rg'
 #alias composer='php -d extension=curl.so -d extension=pdo_sqlite.so -d extension=bcmath.so -n /usr/bin/composer'
 alias sf='./bin/console'
 alias cal='khal'
@@ -104,3 +111,4 @@ cdpath=(~/ ~/Documents/ ~/Documents/Epitech/ ~/Documents/Web/ ~/Documents/Taker/
 [ -f /home/kipik/.travis/travis.sh ] && source /home/kipik/.travis/travis.sh
 
 eval "$(symfony-autocomplete)"
+

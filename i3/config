@@ -147,8 +147,8 @@ new_float normal
 
 exec --no-startup-id feh --bg-scale --randomize ~/.wallpaper/*
 #exec --no-startup-id xcompmgr -c &
-exec --no-startup-id pulseaudio --start
-
+#exec --no-startup-id pulseaudio --start
+exec --no-startup-id nm-applet
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id ponymix increase 5 && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioLowerVolume exec --no-startup-id ponymix decrease 5 && pkill -RTMIN+1 i3blocks
