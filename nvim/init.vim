@@ -57,7 +57,6 @@ nnoremap <leader>l :set list!<CR>
 nnoremap gt <C-]>
 
 inoremap jj <Esc>
-inoremap <Esc> No!!
 
 " }}}
 

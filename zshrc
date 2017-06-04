@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="pure"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras docker docker-compose mvn svn composer)
+plugins=(git git-extras docker docker-compose mvn svn composer zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,8 +93,6 @@ source ~/.zshenv
 # Alias
 alias ls='exa'
 alias ll='ls -l --git'
-alias vim='nvim'
-alias n='nvim'
 alias blih='blih -t ccc635de5e7e1220500b1ecc1e8787cc4ed327ef04692271f21945ff4c13f0ec014bd2226f2cd042cf4073e0572dd3c52369fb447194dd1cd698656c0a44bf33 -u valerian.dorcy@epitech.eu'
 alias bc='bc -lq'
 alias grep='rg'
@@ -112,3 +110,7 @@ cdpath=(~/ ~/Documents/ ~/Documents/Epitech/ ~/Documents/Web/ ~/Documents/Taker/
 
 eval "$(symfony-autocomplete)"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+stty intr ^X
